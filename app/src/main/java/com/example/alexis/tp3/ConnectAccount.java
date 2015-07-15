@@ -142,6 +142,8 @@ public class ConnectAccount extends ActionBarActivity {
                     CharSequence text = null;
                     if(httpStatusCode == 401){
                         text = "Email ou mot de passe incorrects";
+                    }else{
+                        text = "probleme de connexion au serveur";
                     }
 
                     int duration = Toast.LENGTH_SHORT;

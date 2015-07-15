@@ -151,7 +151,9 @@ public class CreateAccount extends ActionBarActivity {
                     final int httpStatusCode = error.networkResponse.statusCode;
                     CharSequence text = null;
                     if(httpStatusCode == 422){
-                        text = "Email deja utilis&eacute;";
+                        text = "Email non disponible";
+                    }else{
+                        text = "probleme de connexion au serveur";
                     }
                     int duration = Toast.LENGTH_SHORT;
 
